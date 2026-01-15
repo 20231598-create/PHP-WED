@@ -1,0 +1,6 @@
+- Tạo index loans(status, due_date) để tối ưu truy vấn Q4 và Q8.
+- Trước khi tạo index, EXPLAIN cho thấy type = ALL, quét toàn bảng.
+- Sau khi tạo index, key được sử dụng và số dòng (rows) giảm.
+- Tạo index loans(member_id, loan_date) giúp Q10 lọc nhanh theo thời gian.
+- Index loan_items(book_id) giúp JOIN nhanh ở Q5 và Q7.
+- Index books(category_id) giúp GROUP BY theo danh mục hiệu quả hơn.
